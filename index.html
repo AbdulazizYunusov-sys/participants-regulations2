@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="style.css/">
+</head>
+<body>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
 
+    header {
+      background: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      height: 60px;
+      max-width: 100%;
+    }
+
+    header h1 {
+      margin: 10px 0 0;
+      font-size: 28px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-sizing: border-box;
+    }
+
+    .accordion {
+      border-bottom: 1px solid #ccc;
+    }
+
+    .accordion input {
+      display: none;
+    }
+
+    .accordion label {
+      display: block;
+      padding: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #eaeaea;
+      transition: background 0.3s ease;
+      font-size: 18px;
+    }
+
+    .accordion label:hover {
+      background-color: #ddd;
+    }
+
+    .accordion .content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      background: #f9f9f9;
+      padding: 0 15px;
+    }
+
+    .accordion input:checked ~ .content {
+      max-height: 500px;
+      padding: 15px;
+    }
+
+    .content p {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    
+  
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="images/CommonWealth logo.JPG" alt="Conference Logo" />
+  <h1>Participants regulations</h1>
+</header>
+
+</div>
+
+<div class="container">
+
+  <div class="accordion">
+    <input type="checkbox" id="attend">
+    <label for="attend">Attendance and Participation</label>
+    <div class="content">
+      <p>1) Delegates must attend all days and full sessions of the conference.</p>
+      <p>2) Any absence must be communicated in advance and approved by the organizing team.</p>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="dress">
+    <label for="dress">Dress Code</label>
+    <div class="content">
+      <p>1) Formal Western business or Casual attires are required at all times during the conference.</p>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="conduct">
+    <label for="conduct">Conduct and Respect</label>
+    <div class="content">
+      <p>1) All participants must show respect to chairs, staff, and participants at all times.</p>
+      <p>2) Disrespectful behavior, personal attacks, or offensive language are not tolerated.</p>
+      <p>3) A cooperative, diplomatic tone is expected in all discussions and interactions.</p>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="academic">
+    <label for="academic">Academic Integrity</label>
+    <div class="content">
+      <p>1) All work submitted (position papers, draft laws, resolutions) must be original.</p>
+      <p>2) Plagiarism or copying content are strictly prohibited.</p>
+      <p>3) Violations may lead to disqualification and removal from the event.</p>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="comm">
+    <label for="comm">Communication Standards</label>
+    <div class="content">
+      <p>1) Only a formal language should be used throughout the event and in committee groups.</p>
+      <p>2) Delegates must not attempt to influence chairs, staff, or awards decisions informally.</p>
+      <p>3) Any form of lobbying or pressure related to results is prohibited.</p>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="discipline">
+    <label for="discipline">Disciplinary Process</label>
+    <div class="content">
+      <p>First warning: formal reminder and record of the violation.</p>
+      <p>Second warning: impact on evaluation and eligibility for awards.</p>
+      <p>Third warning: removal from the committee.</p>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="venue">
+    <label for="venue">Safety and Venue Respect</label>
+    <div class="content">
+      <p>1) Delegates must respect the venue, property, and event staff at all times.</p>
+      <p>2) Littering, vandalism, or inappropriate behavior in venue areas (halls, restrooms, cafeteria) is prohibited.</p>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="code">
+    <label for="code">Code of Conduct Within the Venue</label>
+    <div class="content">
+      <p>1) Regardless of age, the use or possession of alcohol, cigarettes, electronic cigarettes (vapes), or any illegal substances is strictly prohibited within the premises of the conference venue.</p>
+      <p>2) Delegates must maintain respectful and appropriate behavior at all times while on-site, including during breaks and outside of committee sessions.</p>
+      <p>3) Any behavior that compromises the reputation of the event or safety of participants, including intoxication or inappropriate conduct, will result in immediate removal from the conference without warning.</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
